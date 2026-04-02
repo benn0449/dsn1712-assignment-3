@@ -1,3 +1,22 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height:
+    margin:
+}
+
+img {
+    width: 100%;
+}
+
 .header {
     background-color: #000; /*Update background color to #000.*/
     font: #fff; /*Change font color to #fff.*/
@@ -6,6 +25,7 @@
 
 .wrapper {
     max-width: 940px; /* Place all content within header in a wrapper that has a max-width of 940px*/
+    margin: 0 auto;
     align-items: center; /*and center in the middle of the page. This will be a task that is repeated for each section so creating a wrapper class would be ideal.*/ /*use justify content?*/
 
 }
@@ -37,7 +57,7 @@
 
 .hero {
     height: 600px; /*Set the height of the section to 600px.*/
-    background-image: url(); /*Add a background image to the section and adjust properties so that it covers the entire area and the focal point is in the center of the image.*/
+    background-image: url(../images/hands-typing.jpg); /*Add a background image to the section and adjust properties so that it covers the entire area and the focal point is in the center of the image.*/
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
