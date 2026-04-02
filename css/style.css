@@ -6,11 +6,11 @@
     box-sizing: border-box;
 }
 
-body {
+.body {
     background-color: #fff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height:
-    margin:
+    line-height: 1.4;
+    margin: 0;
 }
 
 img {
@@ -61,15 +61,24 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    
+    filter: grayscale(70); /*Apply a grayscale filter of 70%. This is something you will have to search online. A good resource would be w3schools.com.*/
+
 }
 
+.h1 { 
+    max-width: 60%; /*Set your h1 text to have a max-width of 60%.*/
+    background-color:#000; /*Add a black background color to your h1 text using rgba so that the opacity of the color is set to 50%.*/
+    text-shadow: #fff;    /*Apply a text shadow to the white h1 text to separate it from the background a bit more.*/
+        /*Use flexbox properties to center the text both horizontally and vertically in the middle of the hero section. */
+}
 
 
 /*
     Set the height of the section to 600px.
     Add a background image to the section and adjust properties so that it covers the entire area and the focal point is in the center of the image.
-
     Apply a grayscale filter of 70%. This is something you will have to search online. A good resource would be w3schools.com.
+
     Set your h1 text to have a max-width of 60%.
     Add a black background color to your h1 text using rgba so that the opacity of the color is set to 50%.
     Apply a text shadow to the white h1 text to separate it from the background a bit more. 
