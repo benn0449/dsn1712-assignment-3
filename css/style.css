@@ -99,13 +99,60 @@ ABOUT ME
 
 
 
+section {
+  background-color: #fafafa;
+  padding: 2em;
+}
 
-.services {
-    background-color: #fafafa;
+section h2 {
+  margin-top: 0;
 }
 
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  gap: 30px;
+}
 
+.grid div {
+  background-color: #fff;
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.grid div h3 {
+  margin-bottom: 0;
+}
+
+.grid div p {
+  padding-bottom: 2em;
+}
+
+.grid a:link,
+.grid a:visited {
+  display: inline-block;
+  padding: .8em 1em;
+  background-color: #000;
+    border: 2px solid #000;
+    text-decoration-color: #fff;
+  color: #fff;
+
+
+  border-radius: 4px;
+
+  margin-top: auto;
+}
+
+.grid a:hover,
+.grid a:focus {
+  background-color: #fff;
+  color: #000;
+}
 
 /*
 SERVICES
@@ -113,8 +160,21 @@ SERVICES
     Set a max width on the heading and align the text in the center. 
     Use grid to create a three column grid where all columns are evenly distributed.
     Add a gap in between each column.
+
     Apply flexbox to the article and change the direction to be column. By applying flexbox you now have additional properties available to you.
+
     Using margin auto, display the button for each article at the bottom. Remember that using margin auto will take all extra space and apply it to that side of the box (content). Hint: This is not just limited to the left and right.
+
     Style the buttons similar to what is provided in the screenshot; padding, background color of black, black border and text white. On hover swap those property values where the background is white and text is black but the border remains black.
 */
 
+
+
+
+
+/*
+MY WORK SECTION
+    Place all content within this section in a wrapper that has a max-width of 940px and center in the middle of the page.
+    Set a max width on the heading and introduction text for the section and align the text in the center.
+    Place all images in that section in a grid using grid areas or grid line positioning. Hint: The starting point for this will be to create a grid with 6 columns and 2 rows.
+*/
