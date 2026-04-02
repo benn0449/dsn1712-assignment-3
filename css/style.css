@@ -15,7 +15,7 @@ img {
 
 header {
     background-color: #000; /*Update background color to #000.*/
-    font: #fff; /*Change font color to #fff.*/
+    color: #fff; /*Change font color to #fff.*/
 
 }
 
@@ -28,13 +28,43 @@ header {
 
 nav {
     display: flex;
-    flex-direction: row-reverse; /*Adjust name to be on the left and the main navigation to display on the right using flexbox.*/
+    flex-direction: flex-end; /*Adjust name to be on the left and the main navigation to display on the right using flexbox.*/
     display: inline; /*Change the navigation items to line up beside one another.*/
         /*Add space in between each navigation link.*/
         /*Align the name and navigation. */
+
+}
+
+nav a:link,
+nav a:visited {
+    /* font-size: 14px; */
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    /* margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none; */
+    /* line-break: 5px; */
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #858585;
+}
+
+/*
+nav {
+    text-align: center; 
+    margin-top: 40px;
 }
 
 
+
+nav a:hover {
+    text-decoration: underline;
+    color: #9aa0a6;
+}
+*/
 
 /*
 
@@ -69,7 +99,7 @@ HEADER
     max-width: 60%; /*Set your h1 text to have a max-width of 60%.*/
     background-color:rgba(0, 0, 0, 0.5); /*Add a black background color to your h1 text using rgba so that the opacity of the color is set to 50%.*/
     color: #fff;
-    text-shadow: #000 2px 2px;    /*Apply a text shadow to the white h1 text to separate it from the background a bit more.*/  
+    text-shadow: #000 2px 2px; /*Apply a text shadow to the white h1 text to separate it from the background a bit more.*/  
 
 
 }
@@ -88,12 +118,41 @@ HERO
     Use flexbox properties to center the text both horizontally and vertically in the middle of the hero section.
 */
 
-
+/* 
 .grid {
     grid-template-columns: 1fr 1fr;
+} */
+
+
+/* #about-me{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 
+#about-me .block:nth-child(2){
+  grid-column: span 2;
+}
 
+#about-me .block:nth-child(3){
+  grid-column: span 1;
+} */
+
+#about-me{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+#about-me p {
+    display: grid;
+    grid-column: span 2;
+    align-self: start;
+}
+
+#about-me img {
+    display: grid;
+    grid-column: span 1;
+    align-self: end;
+}
 
 /*
 ABOUT ME
@@ -104,26 +163,15 @@ ABOUT ME
 
 
 
-
-section {
-    background-color: #fafafa;
-    padding: 2em;
-}
-
-section h2 {
-    margin-top: 0;
-}
-
-
-.grid {
+.skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  
+
     gap: 30px;
 }
 
-.grid div {
-    background-color: #fff;
+.skills div {
+    background-color: #fafafa; /*Set the section background color to #fafafa.*/
     padding: 1em;
 
     display: flex;
@@ -131,13 +179,14 @@ section h2 {
     align-items: flex-start;
 }
 
-.grid div h3 {
+.skills div h3 {
     margin-bottom: 0;
 }
 
-.grid div p {
+.skills div p {
     padding-bottom: 2em;
 }
+
 
 .grid a:link,
 .grid a:visited {
@@ -147,7 +196,7 @@ section h2 {
     border: 2px solid #000;
     text-decoration-color: #fff;
     color: #fff;
-
+    text-decoration: none;
 
     border-radius: 4px;
 
