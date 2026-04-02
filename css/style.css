@@ -1,7 +1,3 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -30,7 +26,7 @@ img {
 
 }
 
-.nav .ul{
+.nav {
     display: flex;
     flex-direction: row-reverse; /*Adjust name to be on the left and the main navigation to display on the right using flexbox.*/
     display: inline; /*Change the navigation items to line up beside one another.*/
@@ -42,7 +38,7 @@ img {
 
 /*
 
-
+HEADER
     Update background color to #000.
     Change font color to #fff.
     Place all content within header in a wrapper that has a max-width of 940px and center in the middle of the page. This will be a task that is repeated for each section so creating a wrapper class would be ideal.
@@ -75,6 +71,7 @@ img {
 
 
 /*
+HERO
     Set the height of the section to 600px.
     Add a background image to the section and adjust properties so that it covers the entire area and the focal point is in the center of the image.
     Apply a grayscale filter of 70%. This is something you will have to search online. A good resource would be w3schools.com.
@@ -83,4 +80,16 @@ img {
     Add a black background color to your h1 text using rgba so that the opacity of the color is set to 50%.
     Apply a text shadow to the white h1 text to separate it from the background a bit more. 
     Use flexbox properties to center the text both horizontally and vertically in the middle of the hero section.
+*/
+
+
+
+
+
+
+/*
+ABOUT ME
+    Place all content within this section in a wrapper that has a max-width of 940px and center in the middle of the page.
+    Using flexbox or grid, create a two column layout where the left column is taking 2/3 of the available space with the right column taking 1/3. 
+    Text for the section should be in the center (with space on top and bottom) but the image should align with the bottom of the section. 
 */
