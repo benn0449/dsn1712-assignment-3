@@ -27,24 +27,36 @@ header {
 }
 
 nav {
+    text-decoration: none;
     display: flex;
-    flex-direction: flex-end; /*Adjust name to be on the left and the main navigation to display on the right using flexbox.*/
-    display: inline; /*Change the navigation items to line up beside one another.*/
-        /*Add space in between each navigation link.*/
-        /*Align the name and navigation. */
+    flex-direction: row; /*Adjust name to be on the left and the main navigation to display on the right using flexbox.*/
+    justify-content: flex-end;
+    /*display: inline;*/
+}
 
+nav ul {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row; /*Adjust name to be on the left and the main navigation to display on the right using flexbox.*/
+    justify-content: flex-end;
+    /*display: inline;*/
 }
 
 nav a:link,
 nav a:visited {
+    display: flex;
+    flex-direction: flex-end; 
+    display: inline; 
     /* font-size: 14px; */
     color: #fff;
-    text-decoration: none;
     list-style: none;
-    /* margin-left: 20px;
-    margin-right: 20px;
-    text-decoration: none; */
+    text-decoration: none;
+
+    /* margin-left: 20px; */
+/*    margin-right: 20px;
+    text-decoration: none;
     /* line-break: 5px; */
+
 }
 
 nav a:hover {
@@ -53,26 +65,12 @@ nav a:hover {
 }
 
 /*
-nav {
-    text-align: center; 
-    margin-top: 40px;
-}
-
-
-
-nav a:hover {
-    text-decoration: underline;
-    color: #9aa0a6;
-}
-*/
-
-/*
 
 HEADER
-    Update background color to #000.
-    Change font color to #fff.
-    Place all content within header in a wrapper that has a max-width of 940px and center in the middle of the page. This will be a task that is repeated for each section so creating a wrapper class would be ideal.
-    Adjust name to be on the left and the main navigation to display on the right using flexbox.
+    Update background color to #000. -DONE
+    Change font color to #fff. - DONE
+    Place all content within header in a wrapper that has a max-width of 940px and center in the middle of the page. This will be a task that is repeated for each section so creating a wrapper class would be ideal. - DONE
+    Adjust name to be on the left and the main navigation to display on the right using flexbox. 
     Change the navigation items to line up beside one another.
     Add space in between each navigation link.
     Align the name and navigation. 
