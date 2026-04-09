@@ -18,33 +18,46 @@ img {
 header {
     background-color: #000; /*Update background color to #000.*/
     color: #fff; /*Change font color to #fff.*/
-
 }
+
 
 .wrapper {
     max-width: 940px; /* Place all content within header in a wrapper that has a max-width of 940px*/
     margin: 0 auto;
     align-items: center; /*and center in the middle of the page. This will be a task that is repeated for each section so creating a wrapper class would be ideal.*/ /*use justify content?*/
-
 }
 
-nav {
-    text-decoration: none;
+.header {
     display: flex;
-    flex-direction: row; /*Adjust name to be on the left and the main navigation to display on the right using flexbox.*/
-    justify-content: flex-end;
-
-    /*display: inline;?*/
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 nav ul {
+    display: flex;
+    flex-direction: row; /*Adjust name to be on the left and the main navigation to display on the right using flexbox.*/
+    justify-content: flex-end;
+    justify-content: space-between;
+    gap: 20px; /* Add space in between each navigation link. */
+    /*display: inline;?*/
+}
+
+/* .header nav ul {
     text-decoration: none;
     display: flex;
     flex-direction: row; /*Adjust name to be on the left and the main navigation to display on the right using flexbox.*/
-    /* Add space in between each navigation link. */
+    /* Add space in between each navigation link.  - DONE */
 
     /*justify-content: flex-end;*/
     /*display: inline;?*/
+/*
+} 
+
+*/
+ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
 }
 
 nav a:link,
@@ -52,16 +65,9 @@ nav a:visited {
     display: flex;
     flex-direction: flex-end; 
     display: inline; 
-    /* font-size: 14px; */
     color: #fff;
     list-style: none;
     text-decoration: none;
-
-    /* margin-left: 20px; */
-/*    margin-right: 20px;
-    text-decoration: none;
-    /* line-break: 5px; */
-
 }
 
 nav a:hover {
@@ -77,7 +83,7 @@ HEADER
     Place all content within header in a wrapper that has a max-width of 940px and center in the middle of the page. This will be a task that is repeated for each section so creating a wrapper class would be ideal. - DONE
     Adjust name to be on the left and the main navigation to display on the right using flexbox. 
     Change the navigation items to line up beside one another.
-    Add space in between each navigation link.
+    Add space in between each navigation link. - DONE
     Align the name and navigation. 
 
 
@@ -197,9 +203,10 @@ ABOUT ME
 .grid a:link,
 .grid a:visited {
     display: inline-block;
-    padding: .8em 1em;
+    padding: 8em 1em;
     background-color: #000;
-    border: 2px solid #000;
+    border: 2px;
+    border-color: #000;
     text-decoration-color: #fff;
     color: #fff;
     text-decoration: none;
