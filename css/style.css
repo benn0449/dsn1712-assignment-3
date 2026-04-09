@@ -232,12 +232,35 @@ SERVICES
 */
 
 
+#work .portfolio {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
 
+#work .portfolio:nth-child(1){
+  grid-column: span 3;
+}
 
+#work .portfolio:nth-child(2){
+  grid-column: span 3;
+}
+
+#work .portfolio:nth-child(3){
+  grid-column: span 2;
+}
+
+#work .portfolio:nth-child(4){
+  grid-column: span 2;
+}
+
+#work .portfolio:nth-child(5){
+  grid-column: span 2;
+}
 
 /*
 MY WORK SECTION
     Place all content within this section in a wrapper that has a max-width of 940px and center in the middle of the page.
     Set a max width on the heading and introduction text for the section and align the text in the center.
-    Place all images in that section in a grid using grid areas or grid line positioning. Hint: The starting point for this will be to create a grid with 6 columns and 2 rows.
+    Place all images in that section in a grid using grid areas or grid line positioning. Hint: The starting point for this will be to create a grid with 6 columns and 2 rows. - DONE
 */
