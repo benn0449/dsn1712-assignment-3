@@ -109,7 +109,6 @@ HEADER
     color: #fff;
     text-shadow: #000 2px 2px; /*Apply a text shadow to the white h1 text to separate it from the background a bit more.*/  
     text-align: center;
-    margin: 10px;
 
 }
 
@@ -244,32 +243,39 @@ SERVICES
 
     Style the buttons similar to what is provided in the screenshot; padding, background color of black, black border and text white. On hover swap those property values where the background is white and text is black but the border remains black.
 */
+#work h1 p {
+    max-width: 740px;
+    text-align: center;
+}
 
-
-#work .portfolio {
+#work .images {
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(2,1fr);
+
+    grid-template-areas: 
+    "img1 img1 img2 img2 img3 img3"
+    "img4 img4 img4 img5 img5 img5"
 }
 
-#work .portfolio:nth-child(1){
-  grid-column: span 3;
+#work .images .img:nth-child(1){
+  grid-area: img1;
 }
 
-#work .portfolio:nth-child(2){
-  grid-column: span 3;
+#work .images .img:nth-child(2){
+  grid-area: img2;
 }
 
-#work .portfolio:nth-child(3){
-  grid-column: span 2;
+#work .images .img:nth-child(3){
+  grid-area: img3;
 }
 
-#work .portfolio:nth-child(4){
-  grid-column: span 2;
+#work .images .img:nth-child(4){
+  grid-area: img4;
 }
 
-#work .portfolio:nth-child(5){
-  grid-column: span 2;
+#work .images .img:nth-child(5){
+  grid-area: img5;
 }
 
 /*
