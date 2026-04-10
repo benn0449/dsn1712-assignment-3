@@ -109,6 +109,7 @@ HEADER
     color: #fff;
     text-shadow: #000 2px 2px; /*Apply a text shadow to the white h1 text to separate it from the background a bit more.*/  
     text-align: center;
+    padding: 10px;
 
 }
 
@@ -145,9 +146,19 @@ HERO
   grid-column: span 1;
 } */
 
-#about-me {
+#about-me .wrapper{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+}
+
+#about-me .wrapper:nth-child(1){
+    grid-column: 2 / 3;
+
+}
+
+
+#about-me img{
+    grid-column: 1 / 3;
 }
 
 /* #about-me p {
@@ -243,9 +254,19 @@ SERVICES
 
     Style the buttons similar to what is provided in the screenshot; padding, background color of black, black border and text white. On hover swap those property values where the background is white and text is black but the border remains black.
 */
-#work h1 p {
+
+#work h2 {
     max-width: 740px;
     text-align: center;
+}
+
+#work p {
+    max-width: 740px;
+    text-align: center;
+}
+
+.center {
+    align-items: center;
 }
 
 #work .images {
@@ -254,27 +275,27 @@ SERVICES
     grid-template-rows: repeat(2,1fr);
 
     grid-template-areas: 
-    "img1 img1 img2 img2 img3 img3"
-    "img4 img4 img4 img5 img5 img5"
+    "img1 img1 img1 img2 img2 img2"
+    "img3 img3 img4 img4 img5 img5"
 }
 
-#work .images .img:nth-child(1){
+#work .images img:nth-child(1){
   grid-area: img1;
 }
 
-#work .images .img:nth-child(2){
+#work .images img:nth-child(2){
   grid-area: img2;
 }
 
-#work .images .img:nth-child(3){
+#work .images img:nth-child(3){
   grid-area: img3;
 }
 
-#work .images .img:nth-child(4){
+#work .images img:nth-child(4){
   grid-area: img4;
 }
 
-#work .images .img:nth-child(5){
+#work .images img:nth-child(5){
   grid-area: img5;
 }
 
