@@ -156,7 +156,7 @@ HERO
     padding: 15px;
     display: flex;
     justify-content: center;
-    align-items:
+    /* align-items: */
 }
 
 
@@ -221,7 +221,8 @@ ABOUT ME
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
-    margin: auto;
+
+    margin-top: auto;
 
 } 
 
