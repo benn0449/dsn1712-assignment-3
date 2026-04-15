@@ -13,18 +13,15 @@ img {
     width: 100%;
 }
 
-/*header*/
-
 header {
-    background-color: #000; /*Update background color to #000.*/
-    color: #fff; /*Change font color to #fff.*/
+    background-color: #000;
+    color: #fff;
 }
 
-
 .wrapper {
-    max-width: 940px; /* Place all content within header in a wrapper that has a max-width of 940px*/
+    max-width: 940px; 
     margin: 0 auto;
-    align-items: center; /*and center in the middle of the page. This will be a task that is repeated for each section so creating a wrapper class would be ideal.*/ /*use justify content?*/
+    align-items: center; 
 }
 
 .header {
@@ -35,25 +32,12 @@ header {
 
 nav ul {
     display: flex;
-    flex-direction: row; /*Adjust name to be on the left and the main navigation to display on the right using flexbox.*/
+    flex-direction: row; 
     justify-content: flex-end;
     justify-content: space-between;
-    gap: 20px; /* Add space in between each navigation link. */
-    /*display: inline;?*/
+    gap: 20px; 
 }
 
-/* .header nav ul {
-    text-decoration: none;
-    display: flex;
-    flex-direction: row; /*Adjust name to be on the left and the main navigation to display on the right using flexbox.*/
-    /* Add space in between each navigation link.  - DONE */
-
-    /*justify-content: flex-end;*/
-    /*display: inline;?*/
-/*
-} 
-
-*/
 ul li {
     text-decoration: none;
     list-style: none;
@@ -72,79 +56,30 @@ nav a:hover {
     color: #858585;
 }
 
-/*
 
-HEADER
-    Update background color to #000. -DONE
-    Change font color to #fff. - DONE
-    Place all content within header in a wrapper that has a max-width of 940px and center in the middle of the page. This will be a task that is repeated for each section so creating a wrapper class would be ideal. - DONE
-    Adjust name to be on the left and the main navigation to display on the right using flexbox. 
-    Change the navigation items to line up beside one another.
-    Add space in between each navigation link. - DONE
-    Align the name and navigation. 
-
-
-
-*/
-
-/*hero*/
 
 #hero {
-    height: 600px; /*Set the height of the section to 600px.*/
-    background-image: url(../images/hands-typing.jpg); /*Add a background image to the section and adjust properties so that it covers the entire area and the focal point is in the center of the image.*/
+    height: 600px; 
+    background-image: url(../images/hands-typing.jpg); 
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    filter: grayscale(70%); /*Apply a grayscale filter of 70%. This is something you will have to search online. A good resource would be w3schools.com.*/
-
-    display: flex; /*Use flexbox properties to center the text both horizontally and vertically in the middle of the hero section. */
+    filter: grayscale(70%);
+    display: flex; 
     justify-content: center;
     align-items: center;
 }
 
-
 #hero h1 {
-    max-width: 60%; /*Set your h1 text to have a max-width of 60%.*/
-    background-color:rgba(0, 0, 0, 0.5); /*Add a black background color to your h1 text using rgba so that the opacity of the color is set to 50%.*/
+    max-width: 60%;
+    background-color:rgba(0, 0, 0, 0.5); 
     color: #fff;
-    text-shadow: #000 2px 2px; /*Apply a text shadow to the white h1 text to separate it from the background a bit more.*/  
+    text-shadow: #000 2px 2px; 
     text-align: center;
     padding: 10px;
-
 }
 
 
-/*
-HERO
-    Set the height of the section to 600px. - DONE
-    Add a background image to the section and adjust properties so that it covers the entire area and the focal point is in the center of the image. - DONE
-
-    Apply a grayscale filter of 70%. This is something you will have to search online. A good resource would be w3schools.com. - DONE
-
-    Set your h1 text to have a max-width of 60%. - DONE
-    Add a black background color to your h1 text using rgba so that the opacity of the color is set to 50%. - DONE
-    Apply a text shadow to the white h1 text to separate it from the background a bit more.  - DONE
-    Use flexbox properties to center the text both horizontally and vertically in the middle of the hero section. - DONE
-*/
-
-/* 
-.grid {
-    grid-template-columns: 1fr 1fr;
-} */
-
-
-/* #about-me{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-}
-
-#about-me .block:nth-child(2){
-  grid-column: span 2;
-}
-
-#about-me .block:nth-child(3){
-  grid-column: span 1;
-} */
 
 #about-me .wrapper{
     display: grid;
@@ -156,9 +91,7 @@ HERO
     padding: 15px;
     display: flex;
     justify-content: center;
-    /* align-items: */
 }
-
 
 #about-me img {
     grid-column: 1 / 3;
@@ -166,41 +99,21 @@ HERO
     align-self: end;
 }
 
-/* #about-me p {
-    display: grid;
-    grid-column: span 2;
-    align-self: start;
-visited
-}
-
-#about-me img {
-    display: grid;
-    grid-column: span 1;
-    align-self: end;
-}
-
-/* 
-ABOUT ME
-
-    Using flexbox or ->grid<-, create a two column layout where the left column is taking 2/3 of the available space with the right column taking 1/3. - DONE BUT WRONG
-    Text for the section should be in the center (with space on top and bottom) but the image should align with the bottom of the section. 
-*/
-
 
 
 .skills {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Use grid to create a three column grid where all columns are evenly distributed. */
-    gap: 30px; /* Add a gap in between each column. */
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 30px; 
 }
 
 .skills div {
-    background-color: #fafafa; /*Set the section background color to #fafafa.*/
+    background-color: #fafafa; /
     padding: 1em;
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Apply flexbox to the article and change the direction to be column. By applying flexbox you now have additional properties available to you. */
+    align-items: flex-start;
 }
 
 .skills div h3 {
@@ -211,11 +124,16 @@ ABOUT ME
     padding-bottom: 2em;
 }
 
+.skills article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 .skills a:link,
 .skills a:visited {
     display: inline-block;
-    padding: 1em 1em;
+    padding: .8em 1em;
     background-color: #000;
     border: 2px solid black;
     color: #fff;
@@ -226,40 +144,22 @@ ABOUT ME
 
 } 
 
-/* .btn {
-    display: inline-block;
-    padding: 1em 1em;
-    background-color: #000;
-    border: 2px;
-    border-color: #000;
-    text-decoration-color: #fff;
-    color: #fff;
-    text-decoration: none;
-
-    border-radius: 4px;
-
-    margin-top: auto;
-}  */
-
-
 
 .skills a:hover {
     background-color: #fff;
     color: #000;
 }
 
+
 /*
 SERVICES
     Set the section background color to #fafafa. - DONE
     Set a max width on the heading and align the text in the center. 
     Use grid to create a three column grid where all columns are evenly distributed. - DONE
-    Add a gap in between each column. - DONE
+    
 
-    Apply flexbox to the article and change the direction to be column. By applying flexbox you now have additional properties available to you. - DONE
 
-    Using margin auto, display the button for each article at the bottom. Remember that using margin auto will take all extra space and apply it to that side of the box (content). Hint: This is not just limited to the left and right.
 
-    Style the buttons similar to what is provided in the screenshot; padding, background color of black, black border and text white. On hover swap those property values where the background is white and text is black but the border remains black.
 */
 
 #work h2 {
